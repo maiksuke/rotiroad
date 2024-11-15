@@ -45,7 +45,8 @@ nav a {
     padding: 20px;
 }
 .kaart {
-    height: 16rem;
+    border: 1px solid #e5e7eb; /* Väga helehall border */
+    height: 14rem;
     width: 12rem;
     margin: 10px;
     padding: 10px;
@@ -56,7 +57,7 @@ nav a {
 
 .kaart:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .kaart-pilt {
@@ -71,20 +72,22 @@ nav a {
 
 .kaart-pealkiri {
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 .kaart-info {
-    flex-grow: 1;
+    height: 2rem;
 }
 .kaart-info p {
     font-size: 0.8rem;
     margin: 0;
+    line-height: 1rem;
 }
 
 .kaart-alumine {
+    font-size: 0.75rem;
     color: #6b7280;
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
