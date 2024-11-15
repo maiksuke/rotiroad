@@ -74,13 +74,17 @@ nav a {
     margin-top: 1rem;
     margin-bottom: 0.25rem;
 }
+.kaart-info {
+    flex-grow: 1;
+}
 .kaart-info p {
     font-size: 0.8rem;
     margin: 0;
 }
+
 .kaart-alumine {
     color: #6b7280;
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
