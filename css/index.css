@@ -31,3 +31,56 @@ nav a {
     background-color: #5f6b9c;
     border-radius: 10px;
 }
+
+.kategooria {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.kaardid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 20px;
+}
+.kaart {
+    height: 16rem;
+    width: 12rem;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 8px #999;
+}
+
+.kaart:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+.kaart-pilt {
+    height: 8rem;
+    width: 12rem;
+}
+.kaart-pilt img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.kaart-pealkiri {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+.kaart-info p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+.kaart-alumine {
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
