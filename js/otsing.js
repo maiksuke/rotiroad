@@ -2,10 +2,10 @@ function otsiRetsept() {
     const otsinguInput = document
         .getElementById("searchInput")
         .value.toLowerCase()
-    const kategooriad = document.querySelectorAll(".kategooria") // Kõik kategooriad
+    const kategooriad = document.querySelectorAll(".kategooria") // kõik kategooriad
 
     kategooriad.forEach(kategooria => {
-        const kaardid = kategooria.querySelectorAll(".kaart") // Kategooria sees olevad kaardid
+        const kaardid = kategooria.querySelectorAll(".kaart") // kategooria sees olevad kaardid
         let onKaardidNahtaval = false
 
         kaardid.forEach(kaart => {
@@ -14,18 +14,17 @@ function otsiRetsept() {
                 .textContent.toLowerCase()
 
             if (retseptPealkiri.includes(otsinguInput)) {
-                kaart.style.display = "" // Kuvab kaardi
+                kaart.style.display = "" // näitab kaardi
                 onKaardidNahtaval = true
             } else {
-                kaart.style.display = "none" // Peidab kaardi
+                kaart.style.display = "none" // peidab kaardi
             }
         })
 
-        // Peida või kuva kategooria sõltuvalt nähtavatest kaartidest
         if (onKaardidNahtaval) {
-            kategooria.classList.remove("hidden") // Kuvab kategooria
+            kategooria.classList.remove("hidden") // näitab kategooria
         } else {
-            kategooria.classList.add("hidden") // Peidab kategooria
+            kategooria.classList.add("hidden") // peidab kategooria
         }
     })
 }
