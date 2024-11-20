@@ -1,4 +1,5 @@
-function otsiRetsept() {
+function otsiRetsept(event) {
+    event.preventDefault()
     const otsinguInput = document
         .getElementById("searchInput")
         .value.toLowerCase()
