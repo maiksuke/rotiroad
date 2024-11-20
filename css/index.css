@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +10,11 @@ body {
 nav {
     background-color: #4e598c;
     height: 56px;
-    width: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -20,11 +24,11 @@ nav a {
     color: white;
     text-align: center;
     text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 10px;
 }
 
 .nav-logo {
-    padding: 7px;
-    padding-left: 10px;
     font-size: 1.75em;
     font-weight: bold;
 }
@@ -64,133 +68,149 @@ nav a {
 .kaardid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    margin: 0 auto;
+    justify-content: flex-start;
     padding: 20px;
+    margin: 0 auto;
 }
+
 .kaart {
-    border: 1px solid #e5e7eb; /* Väga helehall border */
-    height: 14rem;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
     width: 12rem;
     margin: 10px;
     padding: 10px;
-    background-color: #f0f0f0;
     border-radius: 10px;
-    box-shadow: 0px 10px 8px #999;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .kaart:hover {
-    transform: scale(1.02);
-    transition: transform 0.2s ease-in-out;
+    transform: scale(1.05);
 }
 
-.kaart-pilt {
-    height: 8rem;
-    width: 12rem;
-}
 .kaart-pilt img {
-    height: 100%;
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
 .kaart-pealkiri {
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    line-height: 1rem;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #333;
+    line-height: 1.1rem;
 }
 .kaart-info {
-    height: 2rem;
+    height: 6rem;
 }
 .kaart-info p {
-    font-size: 0.8rem;
     margin: 0;
     line-height: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
 }
 
 .kaart-alumine {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: #6b7280;
     display: flex;
     justify-content: space-between;
-    margin-top: 1.5rem;
 }
-
 /*Retsepti leht*/
-
 .retsept-päis {
-    background: linear-gradient(135deg, #f06, #4e598c);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #6b83d4, #4e598c);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    color: white;
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
 }
+
 .retsept-päis-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex: 1;
+    text-align: left;
 }
 
 .retsept-pealkiri {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 20px;
-    margin-bottom: 4rem;
-    margin-top: 0;
-    text-align: center;
-}
-
-.retsept-pilt {
-    float: right;
-    height: 30rem;
-    width: 50rem;
-    padding: 20px;
-}
-.retsept-pilt img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 20px;
 }
 
 .retsept-info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 15rem;
+    margin: 10px 0;
 }
 
 .retsept-info-icon {
-    height: 4rem;
-    width: 4rem;
-}
-.retsept-info-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 10px;
 }
 
-.retsept-ained {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    padding: 20px;
-    width: 20rem;
+.retsept-info-text {
     font-size: 1.1rem;
-    border: #4e598c 5px solid;
+}
+
+.retsept-pilt {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.retsept-pilt img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Koostisosad */
+.retsept-ained {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.retsept-ained h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4e598c;
+}
+
+.retsept-ained ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .retsept-opetus {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    line-height: 4em;
+    background-color: #ffffff;
     padding: 20px;
-    width: 50rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.8rem;
+}
+
+.retsept-opetus ol {
+    padding-left: 20px;
+}
+
+.retsept-opetus p {
+    margin-bottom: 20px;
 }
