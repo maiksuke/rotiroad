@@ -83,7 +83,7 @@ nav a {
 /* Header */
 .header {
     position: relative;
-    background: linear-gradient(135deg, #ff7e5f, #765d8c);
+    background: linear-gradient(135deg, #765d8c, #4e598c, #6b83d4);
     color: white;
     text-align: center;
     padding: 100px 20px;
