@@ -54,8 +54,11 @@ nav a {
     margin: 16px 16px;
 }
 
-.nav-valik:hover {
+.header nav .nav-valik:hover {
     background-color: #765d8c;
+}
+.nav-valik:hover {
+    background-color: #5f6b9c;
     border-radius: 10px;
 }
 
