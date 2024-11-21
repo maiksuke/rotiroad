@@ -6,15 +6,31 @@ body {
 }
 
 /* NavBar */
-
 nav {
+    position: relative;
     background-color: #4e598c;
     height: 56px;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* NavBar headeri sees*/
+.header nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
 nav a {
@@ -34,9 +50,10 @@ nav a {
 }
 
 .nav-valik:hover {
-    background-color: #5f6b9c;
+    background-color: #765d8c;
     border-radius: 10px;
 }
+
 .nav-otsing {
     flex: 1;
     display: flex;
@@ -53,6 +70,82 @@ nav a {
     outline: none;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+}
+
+/* Header */
+.header {
+    position: relative;
+    background: linear-gradient(135deg, #ff7e5f, #765d8c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.header-tekst {
+    position: relative;
+    z-index: 2;
+    animation: slideIn 1.5s ease-out;
+}
+
+.header-tekst h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 60px;
+    color: white;
+    animation: textGlow 2s infinite alternate;
+}
+
+.header-tekst p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.8);
+    }
 }
 
 .kategooria {
