@@ -86,13 +86,11 @@ nav a {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    font-family: "Poppins", sans-serif;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
 }
 
 .header::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
