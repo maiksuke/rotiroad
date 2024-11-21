@@ -37,7 +37,6 @@ nav {
 nav a {
     float: left;
     display: block;
-    padding: 16px 16px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -45,9 +44,14 @@ nav a {
     border-radius: 10px;
 }
 
+.nav-valik {
+    padding: 16px 16px;
+}
+
 .nav-logo {
     font-size: 1.75em;
     font-weight: bold;
+    margin: 16px 16px;
 }
 
 .nav-valik:hover {
