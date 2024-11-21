@@ -16,6 +16,7 @@ nav {
     padding: 0 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    box-sizing: border-box;
 }
 
 /* NavBar headeri sees*/
@@ -25,12 +26,12 @@ nav {
     left: 0px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
     background: transparent;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
     z-index: 2;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -55,8 +56,8 @@ nav a {
 }
 
 .nav-otsing {
-    flex: 1;
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     height: 56px;
