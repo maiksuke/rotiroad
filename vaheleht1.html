@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vaheleht1</title>
+        <title>Autorid</title>
+        <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <h1>See on alamleht</h1>
-        <p>Siit saad minna pealehele</p>
-        <a href="index.html">Mine pealehele</a>
+        <header class="header" id="header-gradient-taust">
+            <nav>
+                <a class="nav-logo" href="index.html">ROTIROAD</a>
+                <a class="nav-valik" href="vaheleht1.html">Meeskond</a>
+                <a class="nav-valik" href="vaheleht2.html">Vahe2</a>
+            </nav>
+            <div class="header-tekst">
+                <h1>MEESKOND</h1>
+                <p>Meie eduka firma tugitalad</p>
+            </div>
+        </header>
+        <div class="kategooria">
+            <div class="meeskond-kaardid">
+                <div class="meeskond-kaart"
+                     onclick="avaUusAken('https://github.com/maiksuke')"
+                     target="_blank"
+                    >
+                    <div class="meeskond-kaart-pilt">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                        alt=""/>
+                    </div>
+                    <div class="meeskond-kaart-info">
+                        <h4>Mairon Mihkelsoo</h4>
+                        <p>Vanemarendaja</p>
+                    </div>
+                    <div class="meeskond-kaart-alumine">
+                    </div>
+                    
+                </div>
+               <div class="meeskond-kaart"
+                     onclick="avaUusAken('https://github.com/')"
+               >
+                    <div class="meeskond-kaart-pilt">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                        alt=""/>
+                    </div>
+                    <div class="meeskond-kaart-info">
+                        <h4>Robert Palm</h4>
+                        <p>Nooremarendaja</p>
+                    </div>
+                    <div class="meeskond-kaart-alumine">
+                    </div>
+                </div>
+               <div class="meeskond-kaart"
+                     onclick="avaUusAken('https://github.com/hashyyyy')"
+                >
+                    <div class="meeskond-kaart-pilt">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                        alt=""/>
+                    </div>
+                    <div class="meeskond-kaart-info">
+                        <h4>Artur Üleoja</h4>
+                        <p>Nooremarendaja</p>
+                    </div>
+                    <div class="meeskond-kaart-alumine">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/aken.js"></script>
     </body>
 </html>
