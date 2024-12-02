@@ -53,7 +53,7 @@
 }
 
 .kkk-vastus p {
-    margin: 10;
+    margin: 10px;
 }
 
 .kkk-kysimus:focus + .kkk-vastus,
