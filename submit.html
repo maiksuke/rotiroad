@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotiroad-soovita retsepti</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/submit.css" />
+</head>
+
+<body>
+    <header class="header" id="header-gradient-taust">
+        <nav>
+            <a class="nav-logo" href="index.html">ROTIROAD</a>
+            <a class="nav-valik" href="submit.html">Soovita retsepti<a />
+                <a class="nav-valik" href="meeskond.html">Meist</a>
+                <a class="nav-valik" href="KKK.html">KKK</a>
+        </nav>
+        <div class="header-tekst">
+            <h1>SOOVITA RETSEPTI</h1>
+            <p>Saada meile oma lemmikretsept ja lisame selle lehele!</p>
+        </div>
+    </header>
+
+    <div class="kaart-submit">
+        <h1>Soovita retsepti</h1>
+        <form class="retsept-form" method="post">
+            <div class="form-grupp">
+                <label for="retsepti-nimi">Retsepti nimi</label>
+                <input type="text" id="retsepti-nimi" name="retsepti-nimi"
+                    oninvalid="this.setCustomValidity('Palun täitke väli!')" oninput="setCustomValidity('')" required>
+            </div>
+            <div class="form-grupp">
+                <label for="Valmistusaeg">Valmistusaeg (min)</label>
+                <input type="number" id="valmistusaeg" name="valmistusaeg"
+                    oninvalid="this.setCustomValidity('Palun täitke väli arvuga!')" oninput="setCustomValidity('')"
+                    required>
+            </div>
+            <div class="form-grupp">
+                <label for="cost">Hind (Eur)</label>
+                <input type="number" id="cost" name="cost" step="0.01"
+                    oninvalid="this.setCustomValidity('Palun täitke väli arvuga!')" oninput="setCustomValidity('')"
+                    required>
+            </div>
+            <div class="form-grupp">
+                <label for="opetus">Õpetus</label>
+                <textarea id="opetus" name="opetus" rows="10" oninvalid="this.setCustomValidity('Palun täitke väli!')"
+                    oninput="setCustomValidity('')" required></textarea>
+            </div>
+            <button type="submit">Saada</button>
+        </form>
+    </div>
+</body>
+
+</html>
